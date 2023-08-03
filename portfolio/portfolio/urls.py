@@ -1,3 +1,5 @@
+# path portfolio/urls.py
+
 """
 URL configuration for portfolio project.
 
@@ -16,7 +18,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from core.views import get_homepage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('homepage/', get_homepage),
 ]
